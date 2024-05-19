@@ -10,7 +10,7 @@ import NotebookRoutes from './routes/notebook.js';
 configDotenv();
 
 mongoose
-  .connect(process.env.MONGODB)
+  .connect('mongodb+srv://surbhianand2012:FtJEd2ER4434IUYG@cluster0.gjxtccy.mongodb.net/Notesdatabse')
   .then(() => {
     console.log("Connected to MongoDB");
   })
