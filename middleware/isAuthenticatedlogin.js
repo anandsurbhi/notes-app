@@ -3,8 +3,6 @@ import User from '../model/User.js';
 
 const isAuthenticatedlogin = (req, res, next) => {
   const token = req.cookies.token;
-  console.log("hello");
-  console.log(req.cookies);
   if (token) {
     // Verify and decode the token
     console.log(token);
